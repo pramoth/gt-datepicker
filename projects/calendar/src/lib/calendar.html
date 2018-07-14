@@ -6,7 +6,7 @@
          [readonly]="readonlyInput"
          (input)="onInput($event)" [ngStyle]="inputStyle" [class]="inputStyleClass" [placeholder]="placeholder||''"
          [disabled]="disabled">
-  <button style='font-size: 14px; margin-left: -40.59px;' type="button" [icon]="icon" pButton *ngIf="showIcon"
+  <button style='font-size: 14px; margin-left: -29px;padding: 0px;border: none' type="button" class="fa fa-calendar ui-button-icon-only ui-button" pButton *ngIf="showIcon"
           (click)="onButtonClick($event)"
           [ngClass]="{'ui-datepicker-trigger':true,'ui-state-disabled':disabled}" [disabled]="disabled"></button>
 

@@ -1,0 +1,13 @@
+{
+  "name": "gt-calendar",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Pramoth Suwanpech <pramoth@geniustree.co.th>",
+  "private": false,
+  "keywords": ["Thai year calendar"],
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/animations": "^6.0.0-rc.0 || ^6.0.0"
+  }
+}

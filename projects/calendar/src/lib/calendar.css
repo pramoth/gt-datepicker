@@ -314,3 +314,32 @@ tbody {
 a[href="#"] {
   cursor: pointer;
 }
+
+.ui-datepicker.ui-widget .ui-datepicker-calendar td a.ui-state-active {
+  background-color: #186ba0;
+  color: #fff;
+}
+.ui-state-hover{
+  border:none;
+  background: #eeeeee;
+  color: #212121;
+}
+
+.ui-button, .ui-widget-content .ui-button, .ui-widget-header .ui-button, .ui-widget.ui-button {
+  border: 1px solid #f95c5d!important;
+  background: #f95c5d!important;
+}
+
+.ui-button-icon-only {
+  width: 2em;
+}
+.ui-button {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  text-decoration: none!important;
+  cursor: pointer;
+  text-align: center;
+  zoom: 1;
+  overflow: visible;
+}
