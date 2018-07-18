@@ -1,5 +1,4 @@
-<span style='width: 100%;' [ngClass]="{'ui-calendar':true,'ui-calendar-w-btn':showIcon}" [ngStyle]="style"
-      [class]="styleClass">
+<span style='width: 100%;' [ngClass]="{'ui-calendar':true,'ui-calendar-w-btn':showIcon}" [ngStyle]="style" [class]="styleClass">
   <input style='height: 31px; width: 100%; padding-right: 33.59px;' type="text" pInputText *ngIf="!inline"
          (focus)="onInputFocus($event)"
          (keydown)="onInputKeydown($event)" (click)="closeOverlay=false" (blur)="onInputBlur($event)"
@@ -9,7 +8,6 @@
   <button style='font-size: 14px; margin-left: -29px;padding: 0px;border: none' type="button" class="fa fa-calendar ui-button-icon-only ui-button" pButton *ngIf="showIcon"
           (click)="onButtonClick($event)"
           [ngClass]="{'ui-datepicker-trigger':true,'ui-state-disabled':disabled}" [disabled]="disabled"></button>
-
 
 
   <div class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"
@@ -22,9 +20,7 @@
          [ngClass]="{'ui-state-hover ui-datepicker-prev-hover':hoverPrev&&!disabled}">
         <span class="fa fa-angle-left"></span>
 </a>
-<a class="ui-datepicker-next ui-corner-all" href="#" (click)="nextMonth($event)" (mouseenter)="hoverNext=true"
-   (mouseleave)="hoverNext=false"
-   [ngClass]="{'ui-state-hover ui-datepicker-next-hover':hoverNext&&!disabled}">
+<a class="ui-datepicker-next ui-corner-all" href="#" (click)="nextMonth($event)" (mouseenter)="hoverNext=true" (mouseleave)="hoverNext=false" [ngClass]="{'ui-state-hover ui-datepicker-next-hover':hoverNext&&!disabled}">
     <span class="fa fa-angle-right"></span>
 </a>
 <div class="ui-datepicker-title">
@@ -51,9 +47,7 @@
             <td *ngFor="let date of week" [ngClass]="{'ui-datepicker-other-month ui-state-disabled':date.otherMonth,
                                 'ui-datepicker-current-day':isSelected(date),'ui-datepicker-today':isToday(date)}">
                 <a #cell class="ui-state-default" href="#" *ngIf="date.otherMonth ? showOtherMonths : true" [ngClass]="{'ui-state-active':isSelected(date),'ui-state-hover':(hoverCell == cell && !disabled && date.selectable),
-                                            'ui-state-highlight':isToday(date),'ui-state-disabled':!date.selectable}"
-                   (click)="onDateSelect($event,date)"
-                   (mouseenter)="hoverCell=cell" (mouseleave)="hoverCell=null">{{date.day}}</a>
+                                            'ui-state-highlight':isToday(date),'ui-state-disabled':!date.selectable}" (click)="onDateSelect($event,date)" (mouseenter)="hoverCell=cell" (mouseleave)="hoverCell=null">{{date.day}}</a>
             </td>
         </tr>
     </tbody>
